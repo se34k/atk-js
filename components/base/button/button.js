@@ -3,11 +3,6 @@ class AtkBaseButton extends AtkBaseComponent {
         super();
         
         this.setHTML(document.createElement("button"));
-        
-        let btn = this;
-        this.getHTML().addEventListener("click", function(e) {
-            btn.trigger("click", e);
-        });
     }
     
     disable() {
